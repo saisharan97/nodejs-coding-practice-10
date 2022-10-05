@@ -7,7 +7,7 @@ const jwt = require("jsonwebtoken");
 const app = express();
 app.use(express.json());
 
-const { open } = sqlite;
+const { open } = sqlite;̥
 const path = require("path");
 const dbPath = path.join(__dirname, "covid19IndiaPortal.db");
 let db = null;
