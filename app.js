@@ -12,9 +12,11 @@ const path = require("path");
 const dbPath = path.join(__dirname, "covid19IndiaPortal.db");
 let db = null;
 
+const PORT = process.env.PORT || 3030;
+
 const initializeDBandServer = async () => {
   try {
-    app.listen(3000, () => {
+    app.listen(PORT, () => {
       console.log("Server Running on Port 3000");
     });
     db = await open({ filename: dbPath, driver: sqlite3.Database });
