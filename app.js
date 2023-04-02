@@ -122,7 +122,7 @@ const authenticateUser = (request, response, next) => {
 
 // API-1 Get All States
 
-app.get("/states/", authenticateUser, async (request, response) => {
+app.get("/states/", async (request, response) => {
   const getStatesQuery = `
                             select 
                                 * 
